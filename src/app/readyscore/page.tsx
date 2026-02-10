@@ -54,14 +54,13 @@ export default function ReadyScorePage() {
           <div className="grid items-start gap-10 lg:grid-cols-12">
             <div className="lg:col-span-7">
               <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-[56px] lg:leading-[1.05]">
-                Executive Disaster Recovery Readiness
+                ReadyScore™ Executive Readiness Platform
               </h1>
               <p className="mt-4 max-w-2xl text-base font-normal leading-7 text-slate-200/85 sm:text-lg">
-                Evidence-backed clarity executives can take to the board.
+                The evidence-backed system behind board-safe DR decisions.
               </p>
               <p className="mt-5 max-w-2xl text-base leading-7 text-slate-200 sm:text-lg">
-                ReadyScore turns DR assumptions into decision-ready clarity—so leaders can fund the right
-                work, in the right order.
+                See what will not recover without investment, what evidence exists, and what must happen next.
               </p>
 
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">

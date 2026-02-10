@@ -49,9 +49,11 @@ export default function HomePage() {
           <div className="grid items-start gap-10 lg:grid-cols-12">
             <div className="lg:col-span-7">
               <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-[56px] lg:leading-[1.05]">
-                Executive DR Readiness—
-                <span className="block text-slate-100">Evidence-Backed, Board-Safe.</span>
+                Executive Disaster Recovery Readiness
               </h1>
+              <p className="mt-4 max-w-2xl text-base font-normal leading-7 text-slate-200/85 sm:text-lg">
+                Evidence-backed clarity for leadership and the board.
+              </p>
               <p className="mt-5 max-w-2xl text-base leading-7 text-slate-200 sm:text-lg">
                 ReadyScore turns DR assumptions into decision-ready clarity.
               </p>
