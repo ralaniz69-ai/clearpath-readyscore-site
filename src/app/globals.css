@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system,
+    Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Better default focus styles */
+:focus-visible {
+  outline: 2px solid rgba(148, 163, 184, 0.8);
+  outline-offset: 2px;
+}
+
+/* Prevent summary marker */
+summary::-webkit-details-marker {
+  display: none;
+}
