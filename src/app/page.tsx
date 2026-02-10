@@ -49,21 +49,24 @@ export default function HomePage() {
           <div className="grid items-start gap-10 lg:grid-cols-12">
             <div className="lg:col-span-7">
               <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-[56px] lg:leading-[1.05]">
-                Executive Disaster Recovery Readiness
+                ClearPath DR Consulting
               </h1>
               <p className="mt-4 max-w-2xl text-base font-normal leading-7 text-slate-200/85 sm:text-lg">
-                Evidence-backed clarity for leadership and the board.
+                Board-safe disaster recovery readiness—built on evidence, not assumptions.
               </p>
               <p className="mt-5 max-w-2xl text-base leading-7 text-slate-200 sm:text-lg">
-                ReadyScore turns DR assumptions into decision-ready clarity.
+                We help leaders see what won’t recover, why, and the fastest path to defensible readiness.
               </p>
 
               <div className="mt-7 flex flex-wrap gap-2">
                 <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-slate-200">
-                  What will NOT recover without investment
+                  Evidence-backed readiness
                 </span>
                 <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-slate-200">
-                  What evidence exists—and what’s missing
+                  Decision sequencing
+                </span>
+                <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-slate-200">
+                  Audit defensible outputs
                 </span>
               </div>
 
@@ -80,7 +83,11 @@ export default function HomePage() {
                 </ButtonLink>
               </div>
 
-              <p className="mt-7 text-xs leading-5 text-slate-300/80">
+              <p className="mt-6 text-sm leading-6 text-slate-200/70">
+                Designed for CIO, CISO, Risk, and Audit leadership.
+              </p>
+
+              <p className="mt-6 text-xs leading-5 text-slate-300/80">
                 Built by disaster recovery leadership focused on evidence-backed readiness.
               </p>
             </div>
@@ -88,17 +95,17 @@ export default function HomePage() {
             <div className="lg:col-span-5">
               <Card className="border-white/10 bg-white/5 text-slate-100 shadow-none">
                 <div className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">
-                  Executive brief preview
+                  What we deliver
                 </div>
-                <div className="mt-3 text-lg font-semibold">ReadyScore Pilot Output</div>
+                <div className="mt-3 text-lg font-semibold">What leaders leave with</div>
                 <ul className="mt-4 space-y-3 text-sm text-slate-200">
                   <li className="flex items-start gap-3">
                     <span className="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-lg bg-white/10 text-xs font-semibold">
                       1
                     </span>
                     <div>
-                      <div className="font-semibold text-slate-100">Readiness Tier + Confidence</div>
-                      <div className="mt-1 text-slate-200/80">A tier leaders can repeat with the evidence behind it.</div>
+                      <div className="font-semibold text-slate-100">Executive DR Readiness Brief</div>
+                      <div className="mt-1 text-slate-200/80">A brief leadership can align on and use to fund decisions.</div>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
@@ -106,8 +113,8 @@ export default function HomePage() {
                       2
                     </span>
                     <div>
-                      <div className="font-semibold text-slate-100">Top Recovery Blockers</div>
-                      <div className="mt-1 text-slate-200/80">The few constraints that will stop recovery without investment.</div>
+                      <div className="font-semibold text-slate-100">Evidence Index (exists vs missing)</div>
+                      <div className="mt-1 text-slate-200/80">A map of proof that separates assumptions from evidence.</div>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
@@ -115,8 +122,8 @@ export default function HomePage() {
                       3
                     </span>
                     <div>
-                      <div className="font-semibold text-slate-100">Evidence Index</div>
-                      <div className="mt-1 text-slate-200/80">What exists, what’s missing, and what matters most.</div>
+                      <div className="font-semibold text-slate-100">Top Recovery Blockers</div>
+                      <div className="mt-1 text-slate-200/80">The constraints most likely to stop recovery without investment.</div>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
@@ -124,8 +131,8 @@ export default function HomePage() {
                       4
                     </span>
                     <div>
-                      <div className="font-semibold text-slate-100">90-day Sequenced Fix Plan</div>
-                      <div className="mt-1 text-slate-200/80">A short sequence to reduce risk fast.</div>
+                      <div className="font-semibold text-slate-100">Sequenced Fix Plan (30/60/90)</div>
+                      <div className="mt-1 text-slate-200/80">A practical sequence leaders can execute and defend.</div>
                     </div>
                   </li>
                 </ul>

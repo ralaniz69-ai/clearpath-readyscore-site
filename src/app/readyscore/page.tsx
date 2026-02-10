@@ -53,14 +53,17 @@ export default function ReadyScorePage() {
         <Container className="relative py-14 sm:py-16 lg:py-20">
           <div className="grid items-start gap-10 lg:grid-cols-12">
             <div className="lg:col-span-7">
-              <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-[56px] lg:leading-[1.05]">
-                ReadyScore™ Executive Readiness Platform
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">
+                Flagship platform
+              </div>
+              <h1 className="mt-3 text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-[56px] lg:leading-[1.05]">
+                ReadyScore™
               </h1>
               <p className="mt-4 max-w-2xl text-base font-normal leading-7 text-slate-200/85 sm:text-lg">
-                The evidence-backed system behind board-safe DR decisions.
+                The executive readiness platform for evidence-backed DR decisions.
               </p>
               <p className="mt-5 max-w-2xl text-base leading-7 text-slate-200 sm:text-lg">
-                See what will not recover without investment, what evidence exists, and what must happen next.
+                Turn DR inputs into board-ready outputs: readiness tier, confidence, blockers, and a sequenced plan.
               </p>
 
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -84,11 +87,28 @@ export default function ReadyScorePage() {
             <div className="lg:col-span-5">
               <Card className="border-white/10 bg-white/5 text-slate-100 shadow-none">
                 <div className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">
-                  Deliverables preview
+                  Product output preview
                 </div>
-                <div className="mt-3 text-lg font-semibold">What executives leave with</div>
+                <div className="mt-3 text-lg font-semibold">Executive brief preview</div>
                 <ul className="mt-4 space-y-2 text-sm text-slate-200">
-                  {deliverables.map((d) => (
+                  {[
+                    {
+                      title: "Readiness Tier + Confidence",
+                      desc: "A defensible tier with confidence grounded in evidence.",
+                    },
+                    {
+                      title: "Material Operational Exposures",
+                      desc: "The exposures most likely to drive downtime and board escalation.",
+                    },
+                    {
+                      title: "Decision Owners + Funding Status",
+                      desc: "Who owns fixes, what’s funded, and what’s blocked.",
+                    },
+                    {
+                      title: "Board Copy (PDF-ready)",
+                      desc: "A narrative leaders can reuse in steering and board updates.",
+                    },
+                  ].map((d) => (
                     <li key={d.title} className="flex items-start gap-3">
                       <span className="mt-1 h-2 w-2 rounded-full bg-slate-200/80" />
                       <div>

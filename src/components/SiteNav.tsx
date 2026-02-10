@@ -19,13 +19,9 @@ export default function SiteNav() {
             <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-[12px] font-semibold text-white shadow-sm">
               CP
             </span>
-            <span className="hidden sm:flex sm:flex-col sm:leading-tight">
-              <span className="text-sm font-semibold tracking-tight">ClearPath DR Consulting</span>
-              <span className="mt-0.5 text-xs font-normal text-slate-500">
-                ReadyScore™ — Executive DR Readiness Platform
-              </span>
+            <span className="text-sm font-semibold tracking-tight whitespace-nowrap">
+              ClearPath DR Consulting
             </span>
-            <span className="sm:hidden text-sm font-semibold tracking-tight">ClearPath DR Consulting</span>
           </Link>
 
           <nav className="hidden items-center gap-7 text-sm font-medium text-slate-700 md:flex">
