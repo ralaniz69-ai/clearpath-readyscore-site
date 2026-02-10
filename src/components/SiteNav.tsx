@@ -15,11 +15,17 @@ export default function SiteNav() {
     <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/70">
       <Container className="flex h-16 items-center justify-between">
         <div className="flex items-center gap-8">
-          <Link href="/" className="flex items-center gap-3 font-semibold tracking-tight text-slate-900">
+          <Link href="/" className="flex items-center gap-3 text-slate-900">
             <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-[12px] font-semibold text-white shadow-sm">
               CP
             </span>
-            <span className="hidden text-sm sm:inline">ClearPath ReadyScore</span>
+            <span className="hidden sm:flex sm:flex-col sm:leading-tight">
+              <span className="text-sm font-semibold tracking-tight">ClearPath DR Consulting</span>
+              <span className="mt-0.5 text-xs font-normal text-slate-500">
+                ReadyScore™ — Executive DR Readiness Platform
+              </span>
+            </span>
+            <span className="sm:hidden text-sm font-semibold tracking-tight">ClearPath DR Consulting</span>
           </Link>
 
           <nav className="hidden items-center gap-7 text-sm font-medium text-slate-700 md:flex">
