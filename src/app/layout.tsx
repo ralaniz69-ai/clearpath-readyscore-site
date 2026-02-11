@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   description:
     "Executive-grade DR readiness clarity. ReadyScore turns assumptions into evidence-backed, board-safe decisions.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://clearpath-readyscore-site.vercel.app"),
+  icons: {
+    icon: "/clearpath-logo.png",
+  },
   openGraph: {
     title: "ClearPath ReadyScore",
     description:

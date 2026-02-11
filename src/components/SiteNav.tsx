@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Container from "@/components/Container";
 import { ButtonLink } from "@/components/Button";
 
@@ -16,8 +17,15 @@ export default function SiteNav() {
       <Container className="flex h-16 items-center justify-between">
         <div className="flex items-center gap-8">
           <Link href="/" className="flex items-center gap-3 text-slate-900">
-            <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-[12px] font-semibold text-white shadow-sm">
-              CP
+            <span className="relative inline-flex h-9 w-9 items-center justify-center md:h-10 md:w-10">
+              <Image
+                src="/clearpath-logo.png"
+                alt="ClearPath DR Consulting Logo"
+                width={40}
+                height={40}
+                className="object-contain"
+                priority
+              />
             </span>
             <span className="text-sm font-semibold tracking-tight whitespace-nowrap">
               ClearPath DR Consulting
