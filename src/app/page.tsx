@@ -150,21 +150,7 @@ export default function HomePage() {
               <p className="mt-3 text-sm leading-6 text-slate-600">{c.desc}</p>
             </Card>
           ))}
-        </div>
-
-        <p className="mt-8 text-sm leading-6 text-slate-600">
-          Learn more about ClearPath DR Consulting{" "}
-          <a
-            href="https://clearpathdrconsulting.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-400"
-          >
-            clearpathdrconsulting.com
-          </a>
-          .
-        </p>
-      </Section>
+        </div>      </Section>
 
       {/* Who we serve */}
       <Section
