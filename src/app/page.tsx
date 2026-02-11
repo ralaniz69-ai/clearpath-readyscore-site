@@ -1,42 +1,45 @@
+import Link from "next/link";
 import Container from "@/components/Container";
 import { ButtonLink } from "@/components/Button";
 import Card from "@/components/Card";
 import Section from "@/components/Section";
 
 export const metadata = {
-  title: "ClearPath ReadyScore",
+  title: "ClearPath DR Consulting",
   description:
-    "Executive-grade DR readiness clarity. ReadyScore turns assumptions into evidence-backed, board-safe decisions.",
+    "Business continuity and disaster recovery consulting for leaders who need defensible readiness.",
 };
 
-const whyCards = [
+const whatWeDo = [
   {
-    title: "They report activity, not recovery certainty",
-    desc: "Dashboards show tasks completed. Executives need proof that critical workloads will recover—and what will not without investment.",
+    title: "DR Program Build & Remediation",
+    desc: "Policies, standards, roles, and operating rhythm that holds up in real incidents.",
   },
   {
-    title: "They don’t unify the story",
-    desc: "Evidence is scattered across teams, vendors, and systems. Without a single narrative, funding decisions become guesswork.",
+    title: "Recovery Strategy & Testing",
+    desc: "Design and run tests that prove RTO/RPO readiness—not just plan completeness.",
   },
   {
-    title: "They don’t sequence fixes",
-    desc: "Even when gaps are known, most tools can’t tell you what to do first—or how to defend tradeoffs.",
+    title: "Executive & Audit Readiness",
+    desc: "Translate technical risk into board-safe decisions, evidence, and priorities.",
+  },
+  {
+    title: "Vendor & Third-Party Resilience",
+    desc: "Validate critical providers, contractual recovery expectations, and exercise results.",
   },
 ] as const;
 
-const pilotSteps = [
-  {
-    title: "30–45 min exec review",
-    desc: "A structured conversation focused on evidence, blockers, and decision clarity.",
-  },
-  {
-    title: "One-page brief",
-    desc: "Tier + confidence, blockers, and evidence gaps—ready for leadership alignment.",
-  },
-  {
-    title: "90-day sequence",
-    desc: "A prioritized plan that reduces risk fast—without boiling the ocean.",
-  },
+const whoWeServe = [
+  "Healthcare and payer ecosystems",
+  "Retail and multi-site operations",
+  "Financial services and regulated orgs",
+  "Any enterprise with material outage exposure",
+] as const;
+
+const howWeWork = [
+  "Discover & baseline",
+  "Validate & quantify exposure",
+  "Sequence fixes & support execution",
 ] as const;
 
 export default function HomePage() {
@@ -52,24 +55,26 @@ export default function HomePage() {
                 ClearPath DR Consulting
               </h1>
               <p className="mt-4 max-w-2xl text-base font-normal leading-7 text-slate-200/85 sm:text-lg">
-                Board-safe disaster recovery readiness—built on evidence, not assumptions.
+                Business continuity and disaster recovery consulting for leaders who need defensible readiness.
               </p>
               <p className="mt-5 max-w-2xl text-base leading-7 text-slate-200 sm:text-lg">
-                We help leaders see what won’t recover, why, and the fastest path to defensible readiness.
+                We help organizations reduce downtime risk, satisfy audit scrutiny, and fund the right resilience
+                work—based on evidence, not assumptions.
               </p>
 
               <div className="mt-7 flex flex-wrap gap-2">
                 <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-slate-200">
-                  Evidence-backed readiness
+                  Program maturity &amp; governance
                 </span>
                 <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-slate-200">
-                  Decision sequencing
+                  Recovery capability validation
                 </span>
                 <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-slate-200">
-                  Audit defensible outputs
+                  Audit-ready resilience reporting
                 </span>
               </div>
 
+              {/* Keep these two hero buttons exactly as-is (labels + links). */}
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <ButtonLink href="/readyscore#pilot" className="h-11 px-5">
                   Request a Pilot Review
@@ -82,30 +87,24 @@ export default function HomePage() {
                   See what executives receive
                 </ButtonLink>
               </div>
-
-              <p className="mt-6 text-sm leading-6 text-slate-200/70">
-                Designed for CIO, CISO, Risk, and Audit leadership.
-              </p>
-
-              <p className="mt-6 text-xs leading-5 text-slate-300/80">
-                Built by disaster recovery leadership focused on evidence-backed readiness.
-              </p>
             </div>
 
             <div className="lg:col-span-5">
               <Card className="border-white/10 bg-white/5 text-slate-100 shadow-none">
                 <div className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">
-                  What we deliver
+                  What to expect
                 </div>
-                <div className="mt-3 text-lg font-semibold">What leaders leave with</div>
+                <div className="mt-3 text-lg font-semibold">Consulting outcomes, not busywork</div>
                 <ul className="mt-4 space-y-3 text-sm text-slate-200">
                   <li className="flex items-start gap-3">
                     <span className="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-lg bg-white/10 text-xs font-semibold">
                       1
                     </span>
                     <div>
-                      <div className="font-semibold text-slate-100">Executive DR Readiness Brief</div>
-                      <div className="mt-1 text-slate-200/80">A brief leadership can align on and use to fund decisions.</div>
+                      <div className="font-semibold text-slate-100">A clear baseline</div>
+                      <div className="mt-1 text-slate-200/80">
+                        Where you are today across governance, recovery capability, and evidence quality.
+                      </div>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
@@ -113,8 +112,10 @@ export default function HomePage() {
                       2
                     </span>
                     <div>
-                      <div className="font-semibold text-slate-100">Evidence Index (exists vs missing)</div>
-                      <div className="mt-1 text-slate-200/80">A map of proof that separates assumptions from evidence.</div>
+                      <div className="font-semibold text-slate-100">Validation you can defend</div>
+                      <div className="mt-1 text-slate-200/80">
+                        Testing and proof points that stand up to executive, risk, and audit scrutiny.
+                      </div>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
@@ -122,17 +123,10 @@ export default function HomePage() {
                       3
                     </span>
                     <div>
-                      <div className="font-semibold text-slate-100">Top Recovery Blockers</div>
-                      <div className="mt-1 text-slate-200/80">The constraints most likely to stop recovery without investment.</div>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-lg bg-white/10 text-xs font-semibold">
-                      4
-                    </span>
-                    <div>
-                      <div className="font-semibold text-slate-100">Sequenced Fix Plan (30/60/90)</div>
-                      <div className="mt-1 text-slate-200/80">A practical sequence leaders can execute and defend.</div>
+                      <div className="font-semibold text-slate-100">Priorities that make sense</div>
+                      <div className="mt-1 text-slate-200/80">
+                        A practical sequence for reducing outage exposure—aligned to constraints and funding.
+                      </div>
                     </div>
                   </li>
                 </ul>
@@ -142,82 +136,99 @@ export default function HomePage() {
         </Container>
       </section>
 
-      {/* Why */}
+      {/* What we do */}
       <Section
-        eyebrow="Why"
-        title="Why DR tools don’t answer executive questions"
-        description="Most organizations have plans and platforms. Fewer have defensible proof and a sequenced fix story."
+        eyebrow="Services"
+        title="What we do"
+        description="Focused consulting engagements that make DR readiness measurable, defensible, and fundable."
         className="border-b border-slate-200/70 bg-white"
       >
-        <div className="grid gap-4 md:grid-cols-3">
-          {whyCards.map((c) => (
+        <div className="grid gap-4 md:grid-cols-2">
+          {whatWeDo.map((c) => (
             <Card key={c.title}>
               <div className="text-base font-semibold text-slate-900">{c.title}</div>
               <p className="mt-3 text-sm leading-6 text-slate-600">{c.desc}</p>
             </Card>
           ))}
         </div>
+
+        <p className="mt-8 text-sm leading-6 text-slate-600">
+          Learn more about ClearPath DR Consulting{" "}
+          <a
+            href="https://clearpathdrconsulting.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-400"
+          >
+            clearpathdrconsulting.com
+          </a>
+          .
+        </p>
       </Section>
 
-      {/* How pilot works */}
+      {/* Who we serve */}
       <Section
-        eyebrow="How"
-        title="How the pilot works"
-        description="A pilot-first funnel that produces decision clarity fast—without turning DR into a multi-month project."
+        eyebrow="Fit"
+        title="Who we serve"
+        description="Designed for CIO, CISO, Risk, and Internal Audit teams in regulated and high-availability environments."
         className="bg-slate-50"
       >
+        <Card className="bg-white">
+          <ul className="grid gap-2 text-sm text-slate-700 sm:grid-cols-2">
+            {whoWeServe.map((item) => (
+              <li key={item} className="flex items-start gap-2">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-slate-400" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </Card>
+      </Section>
+
+      {/* How we work */}
+      <Section
+        eyebrow="Approach"
+        title="How we work"
+        description="A simple, evidence-forward engagement flow that keeps momentum without sacrificing rigor."
+        className="border-t border-slate-200/70 bg-white"
+      >
         <div className="grid gap-4 md:grid-cols-3">
-          {pilotSteps.map((s, idx) => (
-            <Card key={s.title}>
+          {howWeWork.map((step, idx) => (
+            <Card key={step}>
               <div className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
                 Step {idx + 1}
               </div>
-              <div className="mt-3 text-base font-semibold text-slate-900">{s.title}</div>
-              <p className="mt-3 text-sm leading-6 text-slate-600">{s.desc}</p>
+              <div className="mt-3 text-base font-semibold text-slate-900">{step}</div>
             </Card>
           ))}
         </div>
       </Section>
 
-      {/* Trust strip */}
+      {/* Featured platform */}
       <Section
-        id="about"
-        eyebrow="Trust"
-        title="Board-safe clarity—without over-claiming"
-        description="ClearPath emphasizes defensible evidence and sequencing. Background includes Air Force service and DR leadership experience—presented without hype."
-        className="border-t border-slate-200/70 bg-white"
+        eyebrow="Platform"
+        title="Featured platform"
+        description="ReadyScore remains our flagship platform—featured here, without taking over the consulting-first story."
+        className="bg-slate-50"
       >
-        <Card className="bg-slate-50">
-          <div className="grid gap-6 md:grid-cols-3">
-            <div>
-              <div className="text-sm font-semibold text-slate-900">Executive-grade framing</div>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                Translate technical realities into a narrative leadership can fund and defend.
-              </p>
-            </div>
-            <div>
-              <div className="text-sm font-semibold text-slate-900">Evidence-first</div>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                Focus on what’s proven, what’s assumed, and what’s missing.
-              </p>
-            </div>
-            <div>
-              <div className="text-sm font-semibold text-slate-900">Sequenced action</div>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                A 90-day sequence to reduce risk fast—instead of a vague backlog.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-8">
-            <ButtonLink href="/readyscore#pilot" className="h-11 px-5">
-              Request a Pilot Review
-            </ButtonLink>
+        <Card>
+          <div className="text-base font-semibold text-slate-900">Featured platform: ReadyScore™</div>
+          <p className="mt-3 text-sm leading-6 text-slate-600">
+            ReadyScore is our flagship assessment platform that turns DR evidence into board-ready outputs—so
+            executives can fund the right work in the right order.
+          </p>
+          <div className="mt-5">
+            <Link
+              href="/readyscore"
+              className="text-sm font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-400"
+            >
+              Explore ReadyScore
+            </Link>
           </div>
         </Card>
       </Section>
 
-      {/* Footer lead-in */}
+      {/* Footer lead-in (keep CTA + destination unchanged) */}
       <section className="border-t border-slate-200/70 bg-slate-50">
         <Container className="py-12">
           <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
