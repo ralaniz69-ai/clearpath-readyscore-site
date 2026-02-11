@@ -12,20 +12,20 @@ export const metadata = {
 
 const whatWeDo = [
   {
-    title: "DR Program Build & Remediation",
-    desc: "Policies, standards, roles, and operating rhythm that holds up in real incidents.",
+    title: "Enterprise Resilience Advisory",
+    desc: "Align DR capability to business impact and executive risk tolerance.",
   },
   {
-    title: "Recovery Strategy & Testing",
-    desc: "Design and run tests that prove RTO/RPO readiness—not just plan completeness.",
+    title: "Recovery Validation & Test Strategy",
+    desc: "Design and oversee validation programs that surface real recovery truth.",
   },
   {
-    title: "Executive & Audit Readiness",
-    desc: "Translate technical risk into board-safe decisions, evidence, and priorities.",
+    title: "Executive Readiness & Board Reporting",
+    desc: "Translate technical recovery inputs into defensible leadership decisions.",
   },
   {
-    title: "Vendor & Third-Party Resilience",
-    desc: "Validate critical providers, contractual recovery expectations, and exercise results.",
+    title: "Program Maturity & Control Alignment",
+    desc: "Strengthen governance, documentation, and audit alignment across the DR lifecycle.",
   },
 ] as const;
 
@@ -55,22 +55,22 @@ export default function HomePage() {
                 ClearPath DR Consulting
               </h1>
               <p className="mt-4 max-w-2xl text-base font-normal leading-7 text-slate-200/85 sm:text-lg">
-                Business continuity and disaster recovery consulting for leaders who need defensible readiness.
+                Your enterprise resilience partner for board-defensible disaster recovery.
               </p>
               <p className="mt-5 max-w-2xl text-base leading-7 text-slate-200 sm:text-lg">
-                We help organizations reduce downtime risk, satisfy audit scrutiny, and fund the right resilience
-                work—based on evidence, not assumptions.
+                We help executive teams validate recovery capability, expose material operational risk, and move
+                from assumption to evidence — with clarity leadership can stand behind.
               </p>
 
               <div className="mt-7 flex flex-wrap gap-2">
                 <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-slate-200">
-                  Program maturity &amp; governance
+                  Enterprise DR governance
                 </span>
                 <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-slate-200">
-                  Recovery capability validation
+                  Recovery validation &amp; testing
                 </span>
                 <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-slate-200">
-                  Audit-ready resilience reporting
+                  Board-ready resilience reporting
                 </span>
               </div>
 
